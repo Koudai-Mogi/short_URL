@@ -1,0 +1,7 @@
+<% provide(:title, 'URL入力ページ') %>
+<h1>URL入力ページ</h1>
+<h3>短縮したいurlを入力してね</h3>
+<%= form_for(@web_url) do |f| %>
+    <%= f.url_field :original_url %>
+    <%= f.submit "URL短縮化", class: "btn btn-primary" %>
+<% end %>
