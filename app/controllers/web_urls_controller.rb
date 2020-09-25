@@ -4,9 +4,9 @@ class WebUrlsController < ApplicationController
 
   def show
       @web_url = WebUrl.find(params[:id])
-      if  @web_url ==
+      #if  @web_url ==
 
-      end
+      #end
       #debugger
   end
 
@@ -31,4 +31,6 @@ class WebUrlsController < ApplicationController
   def web_url_params
       params.require(:web_url).permit(:original_url)
   end
+
+
 end
