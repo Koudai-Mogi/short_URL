@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-   root 'application#home'
+  root 'web_url#home'
+
+  get 'web_url/show'
+
+  # root 'application#home'
 end
