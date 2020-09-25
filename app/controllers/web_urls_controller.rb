@@ -4,6 +4,9 @@ class WebUrlsController < ApplicationController
 
   def show
       @web_url = WebUrl.find(params[:id])
+      if  @web_url ==
+
+      end
       #debugger
   end
 
@@ -19,7 +22,7 @@ class WebUrlsController < ApplicationController
       @web_url =WebUrl.new(web_url_params)
       if @web_url.save
           redirect_to @web_url
-      # redirect_to web_url_url@web_url
+      # redirect_to web_url_url(@web_url.id) と等価
       else
           render 'new'
       end
