@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'web_url/show'
   get 'input_url', to: 'web_url#input_url'
-  get 'show', to: 'web_url#show' 
+  get 'show', to: 'web_url#show'
+  get '/:id' => "shortener/shortened_urls#show"
   # root 'application#home'
 end
