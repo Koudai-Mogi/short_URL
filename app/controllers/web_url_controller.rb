@@ -1,0 +1,2 @@
+class WebUrlController < ApplicationController
+end
